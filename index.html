@@ -3,78 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
+  <title>Khalid Khan - Personal Website</title>
   <style>
+    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f9;
+      background-color: #f8f9fa;
       color: #333;
       line-height: 1.6;
     }
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    /* Header */
     header {
-      background: #0077cc;
-      color: #fff;
-      padding: 20px;
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+      color: white;
+      padding: 30px 0;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      margin-top: 15px;
+    }
     nav a {
-      color: #fff;
-      margin: 0 15px;
+      color: white;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
+      transition: 0.3s;
     }
     nav a:hover {
       text-decoration: underline;
     }
+
+    /* Sections */
     section {
-      padding: 20px;
-      max-width: 800px;
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
+    section:nth-child(even) {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       margin-top: 20px;
+    }
+    section:nth-child(odd) {
+      background: #e9ecef;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* About */
+    #about img {
+      max-width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto;
+    }
+    #about p {
+      text-align: center;
+    }
+
+    /* Projects */
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+    .project-list li {
+      padding: 10px;
+      margin: 10px 0;
+      background: #f1f1f1;
+      border-left: 5px solid #0077b6;
+      border-radius: 5px;
+    }
+
+    /* Contact */
+    #contact a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>👋 Hello, I'm Khalid Khan</h1>
+    <p>Aspiring Developer | Tech Enthusiast | Lifelong Learner</p>
     <nav>
-      <a href="#about">About Me</a>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I’m learning Git and building my first personal website.  
-       I enjoy coding, problem-solving, and exploring new technologies.</p>
+    <img src="https://via.placeholder.com/150" alt="Khalid Khan">
+    <p>
+      Hi! I’m Khalid Khan, a passionate developer interested in web development, software engineering, 
+      and solving real-world problems through technology. I enjoy learning new programming languages, 
+      experimenting with projects, and contributing to open-source.
+    </p>
   </section>
 
+  <!-- Projects -->
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>🌱 Greenhouse Crop Management System</li>
-      <li>📊 Simple Data Visualizer</li>
-      <li>🌐 This Website</li>
+    <h2>My Projects</h2>
+    <ul class="project-list">
+      <li><strong>🌱 Greenhouse Crop Management System:</strong> A C language project to manage crop data, evaluate quality, and export reports.</li>
+      <li><strong>💻 Portfolio Website:</strong> A simple website (like this one!) to showcase my work and skills.</li>
+      <li><strong>📱 Mobile App Idea:</strong> A productivity app for students to organize notes and tasks.</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>Here are some of the technologies and tools I work with:</p>
+    <ul>
+      <li>Programming: C, C++, Python, JavaScript</li>
+      <li>Web Development: HTML, CSS, React, Node.js</li>
+      <li>Tools: Git, GitHub, VS Code, Linux</li>
+      <li>Database: MySQL, MongoDB</li>
+    </ul>
   </section>
 
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to connect, feel free to reach out:</p>
+    <p>Email: <a href="mailto:khalid.khan@example.com">khalid.khan@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/khalidkhan" target="_blank">github.com/khalidkhan</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/khalidkhan" target="_blank">linkedin.com/in/khalidkhan</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 My Personal Website | Made with❤️ using HTML</p>
+    <p>&copy; 2025 Khalid Khan | Built with❤️ in HTML & CSS</p>
   </footer>
+
 </body>
 </html>
